@@ -59,6 +59,7 @@ try go mod vendor
 
 # If generates are set run them now
 try go generate ./...
+try sqlc generate
 
 # Run basic fixes
 try go fix ./...

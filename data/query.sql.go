@@ -9,15 +9,6 @@ import (
 	"context"
 )
 
-const doNothing = `-- name: DoNothing :exec
-SELECT count(*) FROM data
-`
-
-func (q *Queries) DoNothing(ctx context.Context) error {
-	_, err := q.db.ExecContext(ctx, doNothing)
-	return err
-}
-
 const getDataByKey = `-- name: GetDataByKey :one
 SELECT uid, key, value FROM data
 WHERE key = ? LIMIT 1
