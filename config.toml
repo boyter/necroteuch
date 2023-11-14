@@ -1,0 +1,8 @@
+[logs]
+level = "info"
+
+[server]
+http_port = 8080
+
+[data]
+sqlite_name = ":memory:"
