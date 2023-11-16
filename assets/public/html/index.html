@@ -7,23 +7,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Necroteuch</title>
-        <style>
-            *.col {
-                border: 1px solid red;
-            }
-        </style>
     </head>
 <body>
 
-<main>
 
 {{ template "navbar" }}
-<div class="container-lg border">
-stuff here
+<div class="container-lg">
+    <div class="row">
+        <div class="col-2">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Search</a>
+                <a class="nav-link" href="#">Settings</a>
+            </nav>
+        </div>
+        <div class="col">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">@someone@something.com</h6>
+                      <p class="mb-0 opacity-75">Noticed that http://searchcode.com had crashed a few times... was curious why. Always due to OOM. Now I know the code spikes, but it shouldn't spike that much. Then checked processes and noticed goaccess was using 20% of the boxes RAM. Probably need to change how that runs.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">now</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">@someone@something.com</h6>
+                      <p class="mb-0 opacity-75">Started a thread in a few places to post your setup. Here’s mine. MacBook Air M1 connected to a 48’ monitor. Logitech Mechanical Mini and MX Master 3. Mic to solve annoying Mac Bluetooth problem and LTT desk pad. It was the only large one I could find I like. Love to see yours!</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">3d</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">@someone@something.com</h6>
+                      <p class="mb-0 opacity-75">Its taken me a few months to get used to a new keyboard, in this case a new mechanical one but it was totally worth it. So much nicer to type on and listen to when typing. In addition the long battery life and switching between machines is brilliant. Logitech MX Mechanical Mini.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">1w</small>
+                  </div>
+                </a>
+              </div>
+        </div>
+    </div>
 </div>
 {{ template "footer" }}
-</main>
-
 
 </body>
 </html>
